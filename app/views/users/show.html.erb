@@ -2,9 +2,18 @@
   <div class="row">
     <div class="col-md-4">
       <img class="img-circle" alt="Generic placeholder image" width="180" height="180">
+      <p><%= link_to "Edit Profile", edit_user_registration_path, class: 'btn btn-success' %></p>
     </div> <!-- /.col-md-4 -->
     <div class="col-md-8">
-      <h1></h1>
+      <h1>Hello <%= current_user.name %>!</h1>
     </div> <!-- /.col-md-8 -->
   </div> <!-- /.row -->
+  <div class="row">
+    <%= render partial: 'items/form', locals: { item: @new_item } %>
+  </div>
+  <div class="row">
+    <ul class="list-unstyled">
+      <%= render current_user.items %>
+    </ul>
+  </div>
 </div> <!-- /.container -->

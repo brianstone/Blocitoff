@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user!, except: [:show]
 
   def show
-
+    @new_item = Item.new
   end
 end
