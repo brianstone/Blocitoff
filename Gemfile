@@ -10,6 +10,7 @@ gem 'devise'
 gem 'pundit'
 gem 'bootstrap-sass'
 
+gem 'faker'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
