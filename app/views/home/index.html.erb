@@ -1,2 +1,18 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!DOCTYPE html>
+<html>
+
+  <body class="home-page">
+    <div class="container home">
+      <div class="jumbotron">
+        <h1>Tâche</h1>
+        <p>Simply To-Do</p>
+      </div>
+      <p class="lead">
+        <%= link_to "Sign Up", new_user_registration_path, class: 'btn ghost-button' %>
+        <%= link_to "Sign In", new_user_session_path, class: 'btn ghost-button' %>
+      </p>
+    </div>
+  </body>
+
+
+</html>

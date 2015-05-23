@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150517045620) do
+ActiveRecord::Schema.define(version: 20150521055646) do
 
   create_table "items", force: :cascade do |t|
     t.string   "task"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20150517045620) do
     t.string   "unconfirmed_email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "avatar"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

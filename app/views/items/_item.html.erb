@@ -1,3 +1,8 @@
 <%= content_tag :li, id: "item-#{item.id}" do %>
-  <h3><%= item.task %></h3>
+<div class="pull-left completed">
+  <%= link_to "", user_item_path(item.task, item), method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %>
+</div>
+<div class="media-body">
+  <h4><%= item.task %></h4>
+</div>
 <% end %>

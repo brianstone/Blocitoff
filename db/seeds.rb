@@ -8,14 +8,14 @@ require 'faker'
   )
   user.skip_confirmation!
   user.save!
-end
-users = User.all
+  users = User.all
 
-10.times do
-  Item.create!(
-    user: users.sample,
-    task: Faker::Lorem.sentence
-    )
+  10.times do
+    Item.create!(
+      user: users.sample,
+      task: Faker::Lorem.sentence
+      )
+  end
 end
 
 puts "Seed finished"
