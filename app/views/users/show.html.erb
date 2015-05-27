@@ -2,14 +2,13 @@
     <%= image_tag(current_user.avatar.large.url, class: "profile-image img-circle") %>
     <h1>Hello <%= current_user.name %>!</h1>
 
-  <div class="row">
     <hr>
-    <h2>My Tasks</h2>
-    <%= render partial: 'items/form', locals: { item: @new_item } %>
+
+  <div class="lead">
+    <h1>My Tasks</h1>
   </div>
-  <div class="row">
+    <%= render partial: 'items/form', locals: { item: @new_item } %>
     <ul class="list-unstyled">
       <%= render current_user.items %>
     </ul>
-  </div>
 </div> <!-- /.container -->

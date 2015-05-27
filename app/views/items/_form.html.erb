@@ -1,8 +1,6 @@
-<%= form_for [current_user, item], :html => {class: 'form-inline'} do |f| %>
-  <div class="form-group">
-    <%= f.label :new_task %>
+<%= form_for [current_user, item], :html => { class: "form-inline" } do |f| %>
+  <div class="form-group my-tasks">
     <%= f.text_field :task, class: 'form-control', placeholder: 'Enter task' %>
   </div> 
-  <%= f.submit "Save task", class: 'btn btn-success' %>
+  <%= f.submit "Save task", class: 'task-ghost-button' %>
 <% end %>
-
