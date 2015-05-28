@@ -173,16 +173,17 @@ Show Page
   margin-right: 7px;
 }
 
-.item-task:nth-child(odd) {
-  background-color: #f1f1f1;
+.item-task {
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 5px;
   padding-bottom: 20px;
 }
 
-.item-task:nth-child(even) {
-  margin-top: 5px;
-  padding-bottom: 20px;  
+.js-tasks > .item-task:nth-child(odd) {
+  background-color: #f1f1f1;
 }
+
 
 .glyphicon.glyphicon-ok {
   font-size: 40px;

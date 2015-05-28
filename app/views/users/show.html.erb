@@ -7,8 +7,10 @@
   <div class="lead">
     <h1>My Tasks</h1>
   </div>
+  <div class="js-task-form">
     <%= render partial: 'items/form', locals: { item: @new_item } %>
-    <ul class="list-unstyled">
-      <%= render current_user.items %>
-    </ul>
+  </div>
+  <ul class="list-unstyled js-tasks">
+    <%= render @items %>
+  </ul>
 </div> <!-- /.container -->

@@ -5,12 +5,18 @@ class ItemsController < ApplicationController
   end
 
   def create
-    @new_item = current_user.items.build(item_params)
-    if @new_item.save
-      redirect_to authenticated_root_path, notice: "Task added."
+    @items = current_user.items.all
+    @item = current_user.items.build(item_params)
+    @new_item = Item.new
+    if @item.save
+      flash[:notice] = "Task added."
     else
       flash[:error] = "Error adding task."
-      render 'users/show'
+    end
+
+    respond_to do |format|
+      format.html
+      format.js
     end
   end
 

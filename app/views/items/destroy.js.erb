@@ -1,1 +1,3 @@
-$('#item-' +<%= @item.id %>).fadeOut();
+$('#item-' +<%= @item.id %>).fadeOut(500, function () {
+  $(this).remove();
+});
