@@ -270,34 +270,37 @@ User edit page
   display: inline-block;
   width: 100px;
   height: 50px;
-  padding: 7px;
-  color: #fff;
-  border: 2px solid #fff;
+  padding: 6px;
+  color: #000;
+  border: 2px solid #000;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  background: transparent;
 }
 
 .ghost-button-profile:hover {
   text-decoration: none;
-  background: #000;
   color: #fff;
+  background: #000;
 }
 
 .ghost-button-cancel {
   display: inline-block;
   width: 200px;
   height: 50px;
-  padding: 7px;
-  color: #fff;
-  border: 2px solid #fff;
+  padding: 6px;
+  color: #000;
+  border: 2px solid #000;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  background: transparent;
 }
 
 .ghost-button-cancel:hover {
   text-decoration: none;
-  background: #f16745;
+  border: 2px solid #f16745;
   color: #fff;
+  background: #f16745;
 }
