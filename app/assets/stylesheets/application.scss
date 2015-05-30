@@ -17,9 +17,9 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
-/*********************
+/******************************************
 GENERAL STYLING
-*********************/
+******************************************/
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -30,9 +30,9 @@ body {
   font-size: 20px;
 }
 
-/*********************
+/******************************************
 NAVIGATION
-*********************/
+******************************************/
 
 .navbar-brand {
   font-family: 'Pacifico', cursive;
@@ -54,9 +54,9 @@ NAVIGATION
   background: transparent;
 }
 
-/*********************
+/******************************************
 Home Page
-*********************/
+******************************************/
 
 .home-page {
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), image-url("handwriting.jpg") no-repeat center center fixed;
@@ -91,7 +91,7 @@ Home Page
   margin-right: 10px;
   padding: 10px;
   color: #fff;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   text-align: center;
   text-transform: uppercase;
   outline: none;
@@ -122,9 +122,9 @@ Home Page
   color: #777;
 }
 
-/*********************
+/******************************************
 Sign up page
-*********************/
+******************************************/
 
 .container .about-tache h1 {
   color: inherit;
@@ -133,15 +133,16 @@ Sign up page
 }
 
 .sign-ghost-button {
-  width: 150px;
-  height: 50px;
-  padding: 8px;
-  color: #fff;
-  border: 1px solid #fff;
+  width: 120px;
+  height: 40px;
+  padding: 6px;
+  color: #000;
+  border: 2px solid #000;
   text-align: center;
   text-transform: uppercase;
   outline: none;
   text-decoration: none;
+  background: transparent;
 }
 
 .sign-ghost-button:hover {
@@ -150,18 +151,22 @@ Sign up page
 
 }
 
-/*********************
+/******************************************
 Login page
-*********************/
+******************************************/
 
 .container .welcome-back h1 {
   color: inherit;
   font-family: 'Montserrat', sans-serif;
 }
 
-/*********************
+.checkbox {
+  margin-left: 20px;  
+}
+
+/******************************************
 Show Page
-*********************/
+******************************************/
 
 .show-page {
   margin-top: 20px; 
@@ -221,22 +226,45 @@ Show Page
   width: 100px;
   height: 50px;
   padding: 7px;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #000;
+  border: 2px solid #000;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  background: transparent;
 }
 
 .task-ghost-button:hover {
   text-decoration: none;
-  background: #000;
   color: #fff;
+  background: #000;
 }
 
-/*********************
+/******************************************
+Reset password page & resend confirmation
+******************************************/
+
+.pass-ghost-button {
+  width: 100px;
+  height: 40px;
+  padding: 6px;
+  color: #000;
+  border: 2px solid #000;
+  text-align: center;
+  text-transform: uppercase;
+  outline: none;
+  text-decoration: none;
+  background: transparent;
+}
+
+.pass-ghost-button:hover {
+  color: #fff;
+  background: #000;
+}
+
+/******************************************
 User edit page
-*********************/
+******************************************/
 
 .ghost-button-profile {
   display: inline-block;
@@ -244,7 +272,7 @@ User edit page
   height: 50px;
   padding: 7px;
   color: #fff;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -262,7 +290,7 @@ User edit page
   height: 50px;
   padding: 7px;
   color: #fff;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
